@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+
+/*BREAKPOINTS
+
+smart  -- 320px -- 544px
+tablet -- 545px -- 768px
+laptop -- 769px -- + and up*/
+
+/*---------------- Break Code ----------------*/
+
+
+body {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+header {
+  background-color: black;
+  padding: 10px;
+}
+
+header a{
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav_bar {
+  padding: 20px;
+}
+
+.albums {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+img {
+  border: 20px solid white;
+  width: 350px;
+}
+
+.album_wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 20px 10px;
+}
+
+footer {
+  background-color: black;
+  padding: 10px;
+}
+
+footer {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+
+/*---------------- Break Code ----------------*/
+
+@media screen and (min-width: 545px) {}
+
+@media screen and (min-width: 769px) {}

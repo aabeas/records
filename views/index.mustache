@@ -1,0 +1,25 @@
+<div class="nav_bar">
+  <h1>German Jazz!</h1>
+  <div>
+    <a href="/albums/new">New Album</a>
+  </div>
+  <p>We found {{albums.length}} album(s)</p>
+</div>
+<div class="albums">
+  {{#albums}}
+      <div class="album_wrapper">
+        <div>
+        <a href="{{link}}">
+          <span>Title: {{title}} - {{year}} | Artist: {{artist}}</span>
+        </a>
+        </div>
+        <div>
+          <img src="{{coverImgUrl}}" alt="{{title}} image - {{year}}">
+        </div>
+        <div class="control_bar">
+          <a href="/albums/{{_id}}/edit">Edit</a>
+        </div>
+      </div>
+      <br>
+  {{/albums}}
+</div>
